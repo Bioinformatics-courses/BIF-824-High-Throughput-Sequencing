@@ -78,6 +78,7 @@ WARNING:<img src="./images/warning.png">
 7. %GC: he overall %GC of all bases in all sequences	 
 
  <img src="./images/basic_statistics.png">
+ 
 > Warning
 Basic Statistics never raises a warning.
 
