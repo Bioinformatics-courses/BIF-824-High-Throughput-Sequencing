@@ -46,6 +46,24 @@ fastqc ERR188026_1.fastq.gz  ERR188026_2.fastq.gz
 fastqc ERR188027_1.fastq.gz  ERR188027_2.fastq.gz
 fastqc ERR188030_1.fastq.gz  ERR188030_2.fastq.gz
 ```
+>>> ## fastqc report 
+1. Summary
+1. Basic Statistics
+2. Per base sequence quality
+3. Per tile sequence quality
+4 Per sequence quality scores
+5. Per base sequence content
+6. Per sequence GC content
+7. Per base N content
+8. Sequence Length Distribution
+9. Sequence Duplication Levels
+10. Overrepresented sequences
+12. Adapter Content
+
+[PASS]<img src="./images/pass.png">
+[FAIL]<img src="./images/fail.png">
+[WARNING]<img src="./images/warning.png">
+
 
 
 
