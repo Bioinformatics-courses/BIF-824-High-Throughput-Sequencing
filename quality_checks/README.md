@@ -67,6 +67,17 @@ FAIL: <img src="./images/fail.png">
 
 WARNING:<img src="./images/warning.png">
 
+## fasqc report: Basic statistics 
+1. Filename:  The original filename of the file which was analysed	
+2. File type:  Whether the file appeared to contain actual base calls or colorspace data which had to be converted to base calls	 
+3. Encoding: ASCII encoding of quality values 	 
+4. Total Sequences:  A count of the total number of sequences processed.  In future will be two values : actual and estimated	 
+5. Total Bases	 
+6. Sequences flagged as poor quality: If running in Casava mode sequences flagged to be filtered will be removed from all analyses 
+7. Sequence length: Provides the length of the shortest and longest sequence in the set. If all sequences are the same length only one value is reported.	 
+7. %GC: he overall %GC of all bases in all sequences	 
+
+ <img src="./images/basic_statistics.png">
 
 
 
