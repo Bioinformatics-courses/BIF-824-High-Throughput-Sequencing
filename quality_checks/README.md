@@ -18,8 +18,12 @@ This is an important metric to pay attention to - low numbers are what you want 
 
 We will download 4 fastq files of 1000 genomes data sets using the link below:
 >https://www.ebi.ac.uk/ena/browser/view/PRJEB3366
+
 >https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-GEUV-1
+
 >https://github.com/nellore/rail/blob/master/eval/E-GEUV-3.sdrf.txt
+
+
 >> commandline to download 
 ```bash
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR188/ERR188027/ERR188027_1.fastq.gz
