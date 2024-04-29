@@ -36,9 +36,16 @@ wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR188/ERR188027/ERR188027_2.fastq.g
 
 >>> ## Tools for quality control assessment 
 1. fastqc https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
-2 multiqc  https://multiqc.info/
+2. multiqc  https://multiqc.info/
+3. picard https://broadinstitute.github.io/picard/
 
 >>> ## checking quality control of fastq files. 
+```bash
+#---->  fastqc 1.fastq.gz  2.fastq.gz 
+fastqc ERR188026_1.fastq.gz  ERR188026_2.fastq.gz 
+fastqc ERR188027_1.fastq.gz  ERR188027_2.fastq.gz
+fastqc ERR188030_1.fastq.gz  ERR188030_2.fastq.gz
+```
 
 
 
