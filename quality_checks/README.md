@@ -60,9 +60,12 @@ fastqc ERR188030_1.fastq.gz  ERR188030_2.fastq.gz
 10. Overrepresented sequences
 12. Adapter Content
 
-[PASS]<img src="./images/pass.png">
-[FAIL]<img src="./images/fail.png">
-[WARNING]<img src="./images/warning.png">
+>>> ## quality assessment status  
+PASS: <img src="./images/pass.png">
+
+FAIL: <img src="./images/fail.png">
+
+WARNING:<img src="./images/warning.png">
 
 
 
