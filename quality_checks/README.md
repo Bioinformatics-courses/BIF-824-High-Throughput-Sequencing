@@ -14,6 +14,20 @@ The Chastity filter works by calculating the ratio of the highest base intensity
 ## Phas/Prephas (%)
 This is an important metric to pay attention to - low numbers are what you want to see e.g. 0.1/0.1. Phasing is the rate at which individual molecules in a cluster become out of sync with each other, with some falling behind (phasing), and others jumping ahead (pre-phasing). The value given is the percentage of true signal being lost in each cycle, so after 150 cycles 15% of the data is now noise. Phasing is why long-reads are difficult!
 
+>>> Download data sets
+We will download 4 fastq files of 1000 genomes data sets using the link below
+https://www.ebi.ac.uk/ena/browser/view/PRJEB3366
+https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-GEUV-1
+https://github.com/nellore/rail/blob/master/eval/E-GEUV-3.sdrf.txt
+> commandline to download 
+```bash
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR188/ERR188027/ERR188027_1.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR188/ERR188026/ERR188026_2.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR188/ERR188030/ERR188030_1.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR188/ERR188030/ERR188030_2.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR188/ERR188026/ERR188026_1.fastq.gz
+wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR188/ERR188027/ERR188027_2.fastq.gz
+```
 
 
 
@@ -47,9 +61,7 @@ This is an important metric to pay attention to - low numbers are what you want 
 
 
 
-
-
-References
+# References
 1. Matlock, B. & Scientific, T. F. Assessment of nucleic acid purity. https://assets.thermofisher.com/TFS-Assets/CAD/Product-Bulletins/TN52646-E-0215M-NucleicAcid.pdf. 
 
 2. Mueller, O., Lightfoot, S. & Schroeder, A. RNA integrity number (RIN) -standardization of RNA quality control. https://www.agilent.com/cs/library/applications/5989-1165EN.pdf (2006). 
