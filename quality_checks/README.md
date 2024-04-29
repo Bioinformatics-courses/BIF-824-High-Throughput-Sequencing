@@ -15,7 +15,8 @@ The Chastity filter works by calculating the ratio of the highest base intensity
 This is an important metric to pay attention to - low numbers are what you want to see e.g. 0.1/0.1. Phasing is the rate at which individual molecules in a cluster become out of sync with each other, with some falling behind (phasing), and others jumping ahead (pre-phasing). The value given is the percentage of true signal being lost in each cycle, so after 150 cycles 15% of the data is now noise. Phasing is why long-reads are difficult!
 
 >>> Download data sets
-We will download 4 fastq files of 1000 genomes data sets using the link below
+
+We will download 4 fastq files of 1000 genomes data sets using the link below:
 https://www.ebi.ac.uk/ena/browser/view/PRJEB3366
 https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-GEUV-1
 https://github.com/nellore/rail/blob/master/eval/E-GEUV-3.sdrf.txt
