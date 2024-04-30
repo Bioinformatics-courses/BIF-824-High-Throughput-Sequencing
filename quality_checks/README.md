@@ -240,7 +240,7 @@ This module will raise an error if any of the sequences have zero length.
 
 > `Note: A low level of duplication may indicate a very high level of coverage of the target sequence, but a high level of duplication is more likely to indicate some kind of enrichment bias (eg PCR over amplification).`
 
-
+ <img src="./images/sequence_duplicate.png">
 
 > Warning
 This module will issue a warning if non-unique sequences make up more than 20% of the total.
