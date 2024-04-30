@@ -119,8 +119,24 @@ This module will raise a failure if the lower quartile for any base is less than
 median for any base is less than 20.
 
 
+## Per tile sequence quality
+1. This graph will only appear in your analysis results if using an Illumina library which retains its original sequence identifiers. 
+2. Encoded in these is the flowcell tile from which each read came. 
+3. The graph allows you to look at the quality scores from each tile across all of your bases to see if there was a loss in quality associated with only one part of the flowcell.
+4. It is a heatmap  and  colours are on a cold to hot scale.
+5. The  cold colours indicate that  quality was at or above the average for that base in the run.
+6. The hotter colours indicate that a tile had worse qualities than other tiles for that base.
 
 
+> `Note that  We would generally ignore errors which mildly affected a small number of tiles for only 1 or 2 cycles, but would pursue larger effects which showed high deviation in scores, or which persisted for several cycles.`
+
+ <img src="./images/per_tile.png">
+
+> Warning
+This module will issue a warning if any tile shows a mean Phred score more than 2 less than the mean for that base across all tiles.
+
+> Failure
+This module will issue a warning if any tile shows a mean Phred score more than 5 less than the mean for that base across all tiles.
 
 
 
