@@ -67,7 +67,7 @@ FAIL: <img src="./images/fail.png">
 
 WARNING:<img src="./images/warning.png">
 
-## fasqc report: Basic statistics 
+## fastqc report: Basic statistics 
 1. Filename:  The original filename of the file which was analysed	
 2. File type:  Whether the file appeared to contain actual base calls or colorspace data which had to be converted to base calls	 
 3. Encoding: ASCII encoding of quality values 	 
@@ -78,19 +78,45 @@ WARNING:<img src="./images/warning.png">
 7. %GC: he overall %GC of all bases in all sequences	 
 
  <img src="./images/basic_statistics.png">
- 
+
 > Warning
 Basic Statistics never raises a warning.
+
 
 > Failure
 Basic Statistics never raises an error.
 
+## fastqc report: Per base sequence quality
+1. A	box-and-whisker	plot	showing	aggregated	quality	score	
+statistics	at	each	position	along	all	reads	in	the	file.	
+2. Note	that	the	X-axis	is	not	uniform.
+3. the	X-axis	 starts	out	with	bases	1-10	being	reported	individually,	after	that, it	will	bin	bases	across	a
+window	a	certain	number	of	positions	wide.	
+4. The	number	of	base	positions	binned	 together	depends	on	the	length	of	the	reads, i.e, 	Shorter	reads	will	have	
+smaller	windows	and	longer	reads	larger	windows. 
+4. The	blue	line	is	the	mean	quality	score	at	each	base	position/window.
+5. The	red	line	within	each	yellow	box	represents	the	median	quality	score	at	that	position/window.
+6. Yellow	box	is	the	inner-quartile	range	for	25th to	75th percentile.
+7. The	upper	and	lower	whiskers	represent	the	10th and	90th percentile	scores.
+8. The y-axis on the graph shows the quality scores. The higher the score the better the
+base call. 
+9. The background of the graph divides the y axis into very good quality calls
+(green), calls of reasonable quality (orange), and calls of poor quality (red). 
 
+> `#40E0D0 Note that The quality of calls on most platforms will degrade as the run progresses, so it is common to see base`
+calls falling into the orange area towards the end of a read.
 
+> `#40E0D Note that FastQC attempts to automatically determine which encoding method was in any fastq file.`
 
+ <img src="./images/per_base_qc.png">
 
+> Warning
+A warning will be issued if the lower quartile for any base is less than 10, or if the median
+for any base is less than 25.
 
-
+> Failure
+This module will raise a failure if the lower quartile for any base is less than 5 or if the
+median for any base is less than 20.
 
 
 
