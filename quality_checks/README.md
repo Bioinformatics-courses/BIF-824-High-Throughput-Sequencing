@@ -265,14 +265,37 @@ This module will issue a warning if any sequence is found to represent more than
 This module will issue an error if any sequence is found to represent more than 1% of the total.
 
 ## Adapter Content
+1. A plot  a cumulative percentage count of the proportion of your library which has seen each of the adapter sequences at each position.
 
+> Any library where a reasonable proportion of the insert sizes are shorter than the read length will trigger this module. This doesn't indicate a problem as such - just that the sequences will need to be adapter trimmed before proceeding with any downstream analysis.
+
+ <img src="./images/adapter_content.png">
+
+>Warning
+This module will issue a warning if any sequence is present in more than 5% of all reads.
+
+>Failure
+This module will issue a warning if any sequence is present in more than 10% of all reads.
 
 ## Kmer Content
+1. The Kmer module starts from the assumption that any small fragment of sequence should not have a positional bias in its apearance within a diverse library. 
+2. There may be biological reasons why certain Kmers are enriched or depleted overall, but these biases should affect all positions within a sequence equally
+3. It measures the number of each 7-mer at each position in your library and then uses a binomial test to look for significant deviations from an even coverage at all positions. 
+4. Any Kmers with positionally biased enrichment are reported. 
+5. The top 6 most biased Kmer are additionally plotted to show their distribution.
+
+> To run in a reasonable time only 2% of the whole library is analysed and the results are extrapolated to the rest of the library. Sequences longer than 500bp are truncated to 500bp for this analysis.
+
+ <img src="./images/kmer_profiles.png">
+
+ <img src="./images/kmer_profiles2.png">
 
 
+> Warning
+This module will issue a warning if any k-mer is imbalanced with a binomial p-value <0.01.
 
-
-
+> Failure
+This module will issue a warning if any k-mer is imbalanced with a binomial p-value < 10^-5.
 
 
 
