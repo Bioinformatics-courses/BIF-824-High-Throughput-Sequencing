@@ -24,9 +24,9 @@ We will use hg38/GRCh38 human reference genome which   is the latest human refer
 2. ftp://ftp.ensembl.org/pub/release-92/fasta/homo_sapiens/dna/
 3. https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.29_GRCh38.p14/
 
-> commands to download  hg38/GRCh38 
+## commands to download  hg38/GRCh38 
 
-UCSC Genome Browser
+### UCSC Genome Browser
 
 > wget -c http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
 > gunzip hg38.fa.gz
@@ -36,7 +36,7 @@ or
 > wget --timestamping 'ftp://hgdownload.cse.ucsc.edu/goldenPath/hg38/bigZips/14/*'
 
 
-NCBI
+### NCBI
 
 > https://api.ncbi.nlm.nih.gov/datasets/v2alpha/genome/accession/GCF_000001405.40/download?include_annotation_type=GENOME_FASTA&include_annotation_type=GENOME_GFF&include_annotation_type=RNA_FASTA&include_annotation_type=CDS_FASTA&include_annotation_type=PROT_FASTA&include_annotation_type=SEQUENCE_REPORT&hydrated=FULLY_HYDRATED
 
