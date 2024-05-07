@@ -9,8 +9,8 @@
     3. [Quality checks.](./quality_checks/README.md)
     4. [NGS preprocessing](./preprocessing/README.md)
 4. [Sequence mapping](./mapping/README.md)
-5. de novo assembly, DNA-seq
-6. RNA-seq. scRNA-seq
+5. de novo assembly
+6. RNA-seq, scRNA-seq, DNA-seq
 7. ChIP-seq 
 8. Variant calling. 
 9. Computational infrastructures and cloud computing

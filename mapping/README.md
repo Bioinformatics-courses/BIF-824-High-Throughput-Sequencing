@@ -11,12 +11,38 @@ Mapper align each read in the set of reads on the reference genome. Some mappers
 1. bwa
 2. Bowtie2 
 
+# Reference genome  
+We will use hg38/GRCh38 human reference genome which   is the latest human reference genome as of today. hg38/GRCh38 was released December, 2013. There are multiple  versions hg38/GRCh38 human reference genome.
+> sources for downloading: 
+
+1.UCSC Genome Browser: http://hgdownload.soe.ucsc.edu/downloads.html#human
+2. Ensembl: https://www.ensembl.org/info/data/ftp/index.html
+3. NCBI: https://www.ncbi.nlm.nih.gov/genome/51
+
+## FTP Download sections 
+1. http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/
+2. ftp://ftp.ensembl.org/pub/release-92/fasta/homo_sapiens/dna/
+3. https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/001/405/GCA_000001405.29_GRCh38.p14/
+
+> commands to download  hg38/GRCh38 
+
+UCSC Genome Browser
+
+> wget -c http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
+> gunzip hg38.fa.gz
+
+or 
+
+> wget --timestamping 'ftp://hgdownload.cse.ucsc.edu/goldenPath/hg38/bigZips/14/*'
 
 
+NCBI
 
+> https://api.ncbi.nlm.nih.gov/datasets/v2alpha/genome/accession/GCF_000001405.40/download?include_annotation_type=GENOME_FASTA&include_annotation_type=GENOME_GFF&include_annotation_type=RNA_FASTA&include_annotation_type=CDS_FASTA&include_annotation_type=PROT_FASTA&include_annotation_type=SEQUENCE_REPORT&hydrated=FULLY_HYDRATED
 
+or 
 
-
+> datasets download genome accession GCF_000001405.40 --include gff3,rna,cds,protein,genome,seq-report
 
 
 
