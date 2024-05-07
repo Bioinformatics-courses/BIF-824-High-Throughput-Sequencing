@@ -271,13 +271,4 @@ This module will issue a warning if any k-mer is imbalanced with a binomial p-va
 
 
 
-# References
-1. Matlock, B. & Scientific, T. F. Assessment of nucleic acid purity. https://assets.thermofisher.com/TFS-Assets/CAD/Product-Bulletins/TN52646-E-0215M-NucleicAcid.pdf. 
 
-2. Mueller, O., Lightfoot, S. & Schroeder, A. RNA integrity number (RIN) -standardization of RNA quality control. https://www.agilent.com/cs/library/applications/5989-1165EN.pdf (2006). 
-
-3. Illumina Inc. Optimizing cluster density on illumina sequencing systems. https://www.illumina.com/content/dam/illumina-marketing/documents/products/other/miseq-overclustering-primer-770-2014-038.pdf (2016). 
-
-4. Hosseini M, Pratas D and Pinho AJ (2016) A Survey on Data Compression Methods for Biological Sequences. Information. An International Interdisciplinary Journal 7(4). Multidisciplinary Digital Publishing Institute: 56.
-
-5. Andrews S (n.d.) Babraham Bioinformatics – FastQC A Quality Control tool for High Throughput Sequence Data. Available at: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/ (accessed 13 October 2023).

@@ -14,7 +14,7 @@ The Chastity filter works by calculating the ratio of the highest base intensity
 ## Phas/Prephas (%)
 This is an important metric to pay attention to - low numbers are what you want to see e.g. 0.1/0.1. Phasing is the rate at which individual molecules in a cluster become out of sync with each other, with some falling behind (phasing), and others jumping ahead (pre-phasing). The value given is the percentage of true signal being lost in each cycle, so after 150 cycles 15% of the data is now noise. Phasing is why long-reads are difficult!
 
->>> ## Download data sets
+>> ## Download data sets
 
 We will download 4 fastq files of 1000 genomes data sets using the link below:
 >https://www.ebi.ac.uk/ena/browser/view/PRJEB3366
@@ -34,8 +34,19 @@ wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR188/ERR188026/ERR188026_1.fastq.g
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR188/ERR188027/ERR188027_2.fastq.gz
 ```
 
->>> ## Tools for quality control assessment 
+>> ## Tools for quality control assessment 
 1. [fastqc](./fastqc.md) https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
-2. [multiqc](multiqc.md)  https://multiqc.info/
-3. [picard](fastqc.md) https://broadinstitute.github.io/picard/
+2. [multiqc](./multiqc.md)  https://multiqc.info/
+3. [picard](./fastqc.md) https://broadinstitute.github.io/picard/
 
+
+# References
+1. Matlock, B. & Scientific, T. F. Assessment of nucleic acid purity. https://assets.thermofisher.com/TFS-Assets/CAD/Product-Bulletins/TN52646-E-0215M-NucleicAcid.pdf. 
+
+2. Mueller, O., Lightfoot, S. & Schroeder, A. RNA integrity number (RIN) -standardization of RNA quality control. https://www.agilent.com/cs/library/applications/5989-1165EN.pdf (2006). 
+
+3. Illumina Inc. Optimizing cluster density on illumina sequencing systems. https://www.illumina.com/content/dam/illumina-marketing/documents/products/other/miseq-overclustering-primer-770-2014-038.pdf (2016). 
+
+4. Hosseini M, Pratas D and Pinho AJ (2016) A Survey on Data Compression Methods for Biological Sequences. Information. An International Interdisciplinary Journal 7(4). Multidisciplinary Digital Publishing Institute: 56.
+
+5. Andrews S (n.d.) Babraham Bioinformatics – FastQC A Quality Control tool for High Throughput Sequence Data. Available at: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/ (accessed 13 October 2023).
