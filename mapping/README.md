@@ -15,7 +15,7 @@ Mapper align each read in the set of reads on the reference genome. Some mappers
 We will use hg38/GRCh38 human reference genome which   is the latest human reference genome as of today. hg38/GRCh38 was released December, 2013. There are multiple  versions hg38/GRCh38 human reference genome.
 > sources for downloading: 
 
-1.UCSC Genome Browser: http://hgdownload.soe.ucsc.edu/downloads.html#human
+1. UCSC Genome Browser: http://hgdownload.soe.ucsc.edu/downloads.html#human
 2. Ensembl: https://www.ensembl.org/info/data/ftp/index.html
 3. NCBI: https://www.ncbi.nlm.nih.gov/genome/51
 
@@ -29,6 +29,8 @@ We will use hg38/GRCh38 human reference genome which   is the latest human refer
 ### UCSC Genome Browser
 
 > wget -c http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
+
+
 > gunzip hg38.fa.gz
 
 or 
@@ -45,8 +47,8 @@ or
 > datasets download genome accession GCF_000001405.40 --include gff3,rna,cds,protein,genome,seq-report
 
 ## Mapping 
-1. [bwa]{./bwa.md}
-2. [Bowtie2]{./bowtie2.md}
+1. [bwa](./bwa.md)
+2. [Bowtie2](./bowtie2.md)
 
 
 
