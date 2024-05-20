@@ -44,7 +44,9 @@ or
 
 > datasets download genome accession GCF_000001405.40 --include gff3,rna,cds,protein,genome,seq-report
 
-
+## Mapping 
+1. [bwa]{./bwa.md}
+2. [Bowtie2]{./bowtie2.md}
 
 
 
